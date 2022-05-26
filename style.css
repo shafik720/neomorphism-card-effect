@@ -1,0 +1,99 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif, ;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ebf5fc;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0px;
+}
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05), 
+                inset -5px -5px 5px rgba(0,0,0,0.5), 
+                5px 5px 5px rgba(0,0,0,0.05),
+                -5px -5px 5px rgba(0,0,0,0.5);
+    margin: 30px;
+    border-radius: 15px;
+}
+.container .card .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+
+.container .card .box .content{
+    padding: 20px;
+    text-align: center;
+}
+.container .card .box .content h2 {
+    position: absolute;
+    font-size: 8em;
+    top: 10px;
+    right: 10px;
+    color: rgba(0,0,0,0.02);
+    transition: 0.5s;
+}
+.container .card:hover .box .content h2 {
+    color: rgba(0,0,0,0.05);
+}
+.container .card .box .content h3{
+    font-size: 1.8em ;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .card .box .content p{
+    font-size: 1em;
+    color: #777;
+    z-index: 1;
+    font-weight: 300;
+}
+.container .card .box .content a{
+    position: relative;
+    padding: 10px 20px;
+    background: #0084D0;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 40px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+}
+.container .card .box .content a:hover{
+    background: #d10c86;
+}
+.container .card:hover .box{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    background: linear-gradient(45deg, #b95ce4, #4f29cd);
+}
+
+.container .card:hover .box .content p,
+.container .card:hover .box .content h3{
+    color: white;
+}
