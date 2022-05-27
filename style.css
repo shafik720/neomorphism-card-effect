@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #ebf5fc;
+    background: #3F6C51;
 }
 .container {
     display: flex;
@@ -90,7 +90,7 @@ body{
 .container .card:hover .box{
     transform: translateY(-50px);
     box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-    background: linear-gradient(45deg, #b95ce4, #8307bd);
+    background: linear-gradient(90deg, hsla(252, 40%, 29%, 1) 0%, hsla(270, 77%, 71%, 1) 100%);
 }
 
 .container .card:hover .box .content p,
